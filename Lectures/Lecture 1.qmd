@@ -1,0 +1,62 @@
+---
+title: "Research Methods in Fisheries Assessment"
+subtitle: "Lecture 1"
+author: "Kyle L. Wilson"
+format: 
+  revealjs:
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    #logo: images/quarto.png
+    css: styles.css
+    footer: "REM 423/613"
+    theme: default
+editor: visual
+#format: pptx
+---
+
+## Course
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+# Next slide topic
+
+## Fisheries
+
+Some thoughts about this slide topic.
+
+```{r sine wave}
+sin(2)
+```
+
+![A tuna.](https://upload.wikimedia.org/wikipedia/commons/1/18/Bluefin-big.jpg){fig-align="center" width="531"}
+
+## Somatic growth
+
+Fish continue to grow throughout their life
+$L_a=L_{\infty}(1-e^{-{\kappa}(a-t_0)})$
+```{r growth}
+linf = 300
+k = 0.3
+t0 = -0.1
+ages = 0:50
+len_age = linf*(1-exp(-k*(ages-t0)))
+plot(ages,len_age,type="l",lwd=2)
+abline()
+```
