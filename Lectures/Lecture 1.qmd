@@ -8,8 +8,8 @@ format:
     chalkboard: 
       buttons: false
     preview-links: auto
-    #logo: images/quarto.png
-    css: styles.css
+    logo: images/sfu_logo.png
+    css: logo.css
     footer: "REM 423/613"
     theme: default
 editor: visual
@@ -49,8 +49,8 @@ sin(2)
 
 ## Somatic growth
 
-Fish continue to grow throughout their life
-$L_a=L_{\infty}(1-e^{-{\kappa}(a-t_0)})$
+Fish continue to grow throughout their life $L_a=L_{\infty}(1-e^{-{\kappa}(a-t_0)})$
+
 ```{r growth}
 linf = 300
 k = 0.3
